@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CSS Star Wars Crawling Titles</title>
+<link rel="stylesheet" href="css/intro-styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="in-sound">
+    <audio id="mySound" src="sounds/star-wars-theme-song.mp3" type="audio/mp3" /></audio>
+  </div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-2">
+				<div class="col-xs-6 game-controls">
+					<center><h4>Mute</h4></center>
+				<center><img id="mute" src="images/volume-mute.png" width="40px"></center>
+				</div>
+		</div>
+		<div class="col-xs-8"></div>
+		<div class="col-xs-2">
+			<div class="col-xs-6 turn-control">
+				<center><span id="empire-user">Commander</span>
+				<br>vs.<br>
+				<span id="rebel-user">Admiral</span></center>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-2">
+			<div class="col-xs-6 turn-control">
+				<center><h4>Skip intro</h4></center>
+				<center><img id="turn-image" src="images/right.png" width="40px"></center>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-2">
+			<div class="col-xs-6 turn-control">
+				<center><h4>Back</h4></center>
+				<center><a href="choose.html"><img src="images/left.png" width="40px"></a></center>
+			</div>
+		</div>
+	</div>
+	</div>
+
+<p id="start">A short time ago in a browser very, very close&hellip;</p>
+
+<h1>STAR WARS<sub>trivia</sub></h1>
+
+<div id="titles"><div id="titlecontent">
+
+	<p class="center">EPISODE XI<br />THE KNOWLEDGE AWAKENS</p>
+
+	<p>It is a period of war.</p>
+
+	<p>While Admiral Ackbar is fighting the galactic empire on the orbit of Bespin, we have been assigned the task to unlock a secret code that will disable the protective shields of the empire’s  secret weapon. </p>
+
+	<p>In order to get this codes, we will need to put our wisdom and knowledge of the force to the test.</p>
+
+	<p>Admiral Ackbar is struggling against the powerful forces of the dark side, he depends on us to get through the shields. If we destroy their secret weapon, freedom of the galaxy will be closer than ever.</p>
+
+	<p>You will be presented with a set of questions, it is important to get as many correct answers as possible. Be aware that if the empire wins this challenge an entire system of planets will be destroyed.</p>
+
+	<p id="maythe">May the force be with you....you are our last hope.</p>
+
+</div></div>
+<script src="js/index.js"></script>
+<script src="js/intro.js"></script>
+<script>setTimeout(function() {
+  window.open("game-hard.html?empireName=" + empireName + "&rebelName=" + rebelName, "_self");
+}, 60000);
+$("#turn-image").click(function() {
+	window.open("game-hard.html?empireName=" + empireName + "&rebelName=" + rebelName, "_self");
+});
+</script>
+</body>
+</html>

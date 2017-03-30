@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div id="in-sound">
+    <audio src="sounds/131-star-wars-battlefront-2-original-game-audio.mp3" autoplay="true" autostart="True" type="audio/mp3" /></audio>
+  </div>
+  <div class="cover">
+    <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-xs-2">
+        <div class="col-xs-6 turn-control">
+  				<center><h4>Mute</h4></center>
+  				<center><img id="mute" src="images/volume-mute.png" width="40px"></center>
+        </div>
+  		</div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+  		<div class="col-xs-2">
+  			<div class="col-xs-6 turn-control">
+  				<center><h4>Rules</h4></center>
+  				<center><a id="settings-play" href="#" data-toggle="modal" data-target="#myModal"><img id="set-image" src="images/settings.png" width="40px"></a></center>
+  			</div>
+  		</div>
+  	</div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+  		<div class="col-xs-2">
+  			<div class="col-xs-6 turn-control">
+  				<center><h4>Credits</h4></center>
+  				<center><a id="credits" href="#" data-toggle="modal" data-target="#myCredits"><img id="set-image" src="images/R2-D2-50.png" width="40px"></a></center>
+  			</div>
+  		</div>
+  	</div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+  		<div class="col-xs-2">
+  			<div class="col-xs-6 turn-control">
+  				<center><h4>Main Menu</h4></center>
+  				<center><a href="index.html"><img src="images/left.png" width="40px"></a></center>
+  			</div>
+  		</div>
+  	</div>
+    </div>
+
+    <div class="hi">
+      <div class="container-fluid">
+      <div class="row" id="title-game"><sub>choose level of difficulty</sub></div>
+      <div class="row">
+      <p>Galactic Empire starts first on every round. We strongly encourage you to read Star Wars Trivia rules on the left hand menu. Choose the level of difficulty for this round. May the force be with you...</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <center><img src="images/clone-art.png" width="300px">
+          <!-- <a href="intro.html" class="mainlink"> -->
+          <a href="#" data-toggle="modal" data-target="#modal-names" class="mainlink">
+          Easy
+          </a></center>
+        </div>
+        <div class="col-xs-4">
+          <center><img src="images/jedi-art.png" width="300px">
+          <a href="#" data-toggle="modal" data-target="#modal-medium" class="mainlink">
+          Moderate
+        </a></center>
+        </div>
+        <div class="col-xs-4">
+          <center><img src="images/darth-art.png" width="300px">
+          <a href="#" data-toggle="modal" data-target="#modal-hard" class="mainlink">
+          Expert
+        </a></center>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade tip" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-title" id="myModalLabel">Game Rules</div>
+            </div>
+
+
+            <!--  MODAL BODY -->
+            <div class="modal-body">
+              <div id="answer-tip">
+                <ul>
+                  <li>Designed for 2 users</li>
+                  <li>Galactic Empire starts all rounds</li>
+                  <li>There is the same amount of questions for both users on every round</li>
+                  <li>Difficulty levels: Easy, Medium and Hard</li>
+                  <li>Each correct answer is worth 1000 points</li>
+                  <li>Time limit of 20 seconds per question</li>
+                  <li>If timer gets to 0, question will be skipped.</li>
+                  <li>Score Board: Upper left hand side</li>
+                  <li>User turn board: Upper right hand side</li>
+              </div>
+            </div>
+
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="letsPLay">Let's Play!</button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Credits-->
+      <div class="modal fade tip" id="myCredits" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-title" id="myModalLabel">Credits</div>
+            </div>
+
+            <!--  MODAL BODY -->
+            <div class="modal-body">
+              <div id="answer-tip">
+                <ul>
+                  <li>Created by: <a href="https://github.com/imth3walrus" target="_blank">Juan Duque</li>
+                  <li><a href="http://oblalex.github.io/jQuery-backward-timer/" target ="_blank">Backward Timer</a>, Credit: Alexander Oblovatniy</li>
+                  <li><a href="https://www.sitepoint.com/css3-starwars-scrolling-text/" target="_blank">Star Wars CSS3</a>, Credit: Craig Buckler</li>
+                  <li>Special thanks to all Ironhack teachers, staff and students who helped me in this project.</li>
+                </ul>
+                <p><center><strong>In memory of Carrie Fisher<br>Leader, warrior, feminist.</strong></p>
+                  <img src="images/leia-forever.jpg" width="500px"></center>
+              </div>
+            </div>
+
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="letsPLay">Let's Play!</button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal AMATEUR-->
+      <div class="modal fade tip" id="modal-names" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-title" id="myModalLabel">Enter user names (Difficulty: Easy)</div>
+            </div>
+
+            <!--  MODAL BODY  -->
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="user1Name">User 1 Name (Empire)</label>
+                  <input type="text" class="form-control" id="empire-name" placeholder="Darth Vader">
+                </div>
+                <div class="form-group">
+                  <label for="user2Name">User 2 Name (Rebels)</label>
+                  <input type="text" class="form-control" id="rebel-name" placeholder="Han-Solo">
+                </div>
+            </div>
+
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"  id="letsPlayEasy">Let's Play!</button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal MEDIUM-->
+      <div class="modal fade tip" id="modal-medium" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-title" id="myModalLabel">Enter user names (Difficulty: Moderate)</div>
+            </div>
+
+            <!--  MODAL BODY  -->
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="user1Name">User 1 Name (Empire)</label>
+                  <input type="text" class="form-control" id="empire-name-medium" placeholder="Darth Vader">
+                </div>
+                <div class="form-group">
+                  <label for="user2Name">User 2 Name (Rebels)</label>
+                  <input type="text" class="form-control" id="rebel-name-medium" placeholder="Han-Solo">
+                </div>
+            </div>
+
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"  id="letsPlayMedium">Let's Play!</button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal HARD-->
+      <div class="modal fade tip" id="modal-hard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-title" id="myModalLabel">Enter user names (Difficulty: Expert)</div>
+            </div>
+
+            <!--  MODAL BODY  -->
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="user1Name">User 1 Name (Empire)</label>
+                  <input type="text" class="form-control" id="empire-name-hard" placeholder="Darth Vader">
+                </div>
+                <div class="form-group">
+                  <label for="user2Name">User 2 Name (Rebels)</label>
+                  <input type="text" class="form-control" id="rebel-name-hard" placeholder="Han-Solo">
+                </div>
+            </div>
+
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"  id="letsPlayHard">Let's Play!</button>
+              <!-- <button type="button" class="btn btn-primary">Save</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  	<div class="tv">
+  		  <div class="screen mute" id="tv"></div>
+  	</div>
+<script src="js/index.js"></script>
+<script src="js/choose.js"></script>
+</body>
+</html>

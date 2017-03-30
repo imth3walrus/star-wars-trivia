@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'ITC Serif Gothic Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ITC Serif Gothic Extra Bold'), url('../Fonts/itc-serif-gothic-extra-bold-588cef7e1f5d9.woff') format('woff');
+}
+
+@font-face {
+font-family: 'ITC Serif Gothic Regular';
+font-style: normal;
+font-weight: normal;
+src: local('ITC Serif Gothic Regular'), url('../Fonts/itc-serif-gothic-regular-588cef4e7134b.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Star Jedi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Star Jedi'), url('../Fonts/Starjedi.woff') format('woff');
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'ITC Serif Gothic Regular', 'Roboto Slab', serif;
+}
+
+.answer-input {
+  font-size: 15px!important;
+  height: 40px!important;
+  width: 250px!important;
+}
+
+h1 {
+  font-family: 'ITC Serif Gothic Extra Bold'!important;
+  font-style: normal;
+  font-weight: normal;
+  color: #ff0;
+  line-height: normal;
+}
+
+h2 {
+  font-family: 'ITC Serif Gothic Extra Bold'!important;
+  font-style: normal;
+  font-weight: normal;
+  color: #ff0!important;
+  font-size: 70px!important;
+  line-height: normal;
+}
+
+a {
+  color: #ff0;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.cover .hi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'ITC Serif Gothic Regular', 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+.hi {
+  background: rgba(68, 68, 68, 0.5)!important;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+}
+.cover .hi span {
+  color: #ff0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cover .hi em {
+  font-style: normal;
+}
+.cover .hi em.hidden {
+  display: none;
+}
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tv .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.tv .screen.active {
+  opacity: 1;
+}
+
+a.mainlink {
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 15px 10px;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    width: 43%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+a.mainlink:hover {
+    background: #ff0;
+    color: #575757;
+  }
+
+.board{
+  width: 100%;
+}
+.game-controls {
+  font-family: 'ITC Serif Gothic Regular', 'Roboto Slab', serif;
+  background-color: #ff0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.turn-control {
+  font-family: 'ITC Serif Gothic Regular', 'Roboto Slab', serif;
+  background-color: #ff0;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+#in-sound {
+  height: 1px;
+  width: 1px;
+}
+.tip {
+  font-family: 'ITC Serif Gothic Regular';
+  font-size: 20px;
+  /*color: #444;*/
+}
+#mute:hover {
+  cursor:pointer;
+}
+.timer-container{
+  /*margin-top: 35%;*/
+  color: red;
+  font-weight: bold;
+  font-family: 'Star Jedi', 'Roboto Slab', serif;
+  background-color: #ff0;
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+#title-game {
+  font-family: 'Star Jedi';
+  color: #ff0;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+#title-game sub {
+  font-size: 40px;
+}
+.modal-answer {
+  background-color: #000;
+}
