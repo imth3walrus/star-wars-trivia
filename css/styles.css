@@ -20,7 +20,7 @@ src: local('ITC Serif Gothic Regular'), url('../Fonts/itc-serif-gothic-regular-5
 }
 
 body {
-  background: #000;
+  background: #000!important;
   color: #fff;
   font-family: 'ITC Serif Gothic Regular', 'Roboto Slab', serif;
 }
@@ -72,7 +72,7 @@ a {
 }
 .hi {
   background: rgba(68, 68, 68, 0.5)!important;
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
   border-radius: 10px;
 }
 .cover .hi span {
@@ -117,7 +117,7 @@ a.mainlink {
     display: block;
     text-align: center;
     margin: 25px auto;
-    width: 43%;
+    width: 60%;
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
@@ -164,7 +164,8 @@ a.mainlink:hover {
   font-weight: bold;
   font-family: 'Star Jedi', 'Roboto Slab', serif;
   background-color: #ff0;
-  font-size: 40px;
+  font-size: 35px;
+  margin-top: 10px;
   border-radius: 10px;
   padding: 10px;
 }

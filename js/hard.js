@@ -90,7 +90,7 @@ var starWarsGame = function() {
 
 		{question:"When Luke, Leia, and Han Solo are stuck in the trash compactor, what else is in there with them?", answer:"Dianoga", dummyOne:"Gundark", dummyTwo:"Anooba", dummyThree:"Wampa", tip:"????", img:"images/anooba.jpg"},
 
-		{question:"What was Anakin Skywalker's mom's name?", answer:"Shmi", dummyOne:"Green", dummyTwo:"White", dummyThree:"Red", tip:"After Anakin left to become a Jedi, she was sold to Cliegg Lars, who freed her and married her. Just before the Clone Wars, she died in her sons arms after being brutally tortured by a band of Tusken Raiders.", img:"images/shmi.jpg"},
+		{question:"What was Anakin Skywalker's mom's name?", answer:"Shmi", dummyOne:"Padme", dummyTwo:"Organa", dummyThree:"Asohka", tip:"After Anakin left to become a Jedi, she was sold to Cliegg Lars, who freed her and married her. Just before the Clone Wars, she died in her sons arms after being brutally tortured by a band of Tusken Raiders.", img:"images/shmi.jpg"},
 
 		{question:"What actor physically played Darth Maul?", answer:"Ray Park", dummyOne:"Ray Parker Jr.", dummyTwo:"Viggo Mortenses", dummyThree:"Peter Serafino", tip:"Played Toad in X-Men, Snake-Eyes in G.I. Joe: The Rise of Cobra and G.I. Joe: Retaliation, and Edgar on Heroes.", img:"images/darthmaul.jpg"},
 
